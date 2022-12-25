@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
@@ -8,18 +8,19 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="Humanizer" Version="2.14.1" />
-	  <PackageReference Include="Spectre.Console" Version="0.45.0" />
-	  <PackageReference Include="Spectre.Console.Analyzer" Version="0.45.0">
-	    <PrivateAssets>all</PrivateAssets>
-	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-	  </PackageReference>
+		<PackageReference Include="Humanizer" Version="2.14.1" />
+		<PackageReference Include="Spectre.Console" Version="0.45.0" />
+		<PackageReference Include="Spectre.Console.Analyzer" Version="0.45.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\DesignPatterns.Behavioral\DesignPatterns.Behavioral.csproj" />
-	  <ProjectReference Include="..\DesignPatterns.Creational\DesignPatterns.Creational.csproj" />
-	  <ProjectReference Include="..\DesignPatterns.Structural\DesignPatterns.Structural.csproj" />
+		<ProjectReference Include="..\DesignPatterns.Behavioral\DesignPatterns.Behavioral.csproj" />
+		<ProjectReference Include="..\DesignPatterns.Core\DesignPatterns.Core.csproj" />
+		<ProjectReference Include="..\DesignPatterns.Creational\DesignPatterns.Creational.csproj" />
+		<ProjectReference Include="..\DesignPatterns.Structural\DesignPatterns.Structural.csproj" />
 	</ItemGroup>
 
 </Project>
