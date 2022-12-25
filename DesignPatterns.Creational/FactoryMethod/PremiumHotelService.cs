@@ -1,4 +1,5 @@
 ﻿using Humanizer;
+using Spectre.Console;
 
 namespace DesignPatterns.Creational.FactoryMethod;
 
@@ -6,6 +7,7 @@ public sealed class PremiumHotelService : IHotelService
 {
     public void Charge()
     {
-        Console.WriteLine($"The charge for the {nameof(PremiumHotelService).Humanize()} has been made");
+        AnsiConsole.WriteLine(
+            $"The charge for the {nameof(PremiumHotelService).Humanize(LetterCasing.Title)} has been made");
     }
 }
