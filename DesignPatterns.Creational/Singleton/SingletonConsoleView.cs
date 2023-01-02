@@ -4,7 +4,7 @@ using Spectre.Console;
 
 namespace DesignPatterns.Creational.Singleton;
 
-public class SingletonConsoleView : IConsoleView
+public sealed class SingletonConsoleView : IConsoleView
 {
     public string Label { get; } = nameof(Singleton).Humanize(LetterCasing.Title);
 

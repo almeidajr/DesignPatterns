@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.Core;
 using DesignPatterns.Creational.AbstractFactory;
+using DesignPatterns.Creational.Builder;
 using DesignPatterns.Creational.FactoryMethod;
 using DesignPatterns.Creational.Singleton;
 using Spectre.Console;
@@ -18,7 +19,8 @@ public sealed class CreationalConsoleView : IConsoleView
                 .AddChoices(
                     new FactoryMethodConsoleView(),
                     new AbstractFactoryConsoleView(),
-                    new SingletonConsoleView())
+                    new SingletonConsoleView(),
+                    new BuilderConsoleView())
                 .UseConverter(view => view.Label));
         view.Render();
     }

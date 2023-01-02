@@ -2,7 +2,7 @@
 
 namespace DesignPatterns.Creational.Singleton;
 
-public class DatabaseContext
+public sealed class DatabaseContext
 {
     private static DatabaseContext? _instance;
     private static readonly Mutex Mutex = new();
