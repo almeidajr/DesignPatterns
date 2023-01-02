@@ -2,6 +2,7 @@
 using DesignPatterns.Creational.AbstractFactory;
 using DesignPatterns.Creational.Builder;
 using DesignPatterns.Creational.FactoryMethod;
+using DesignPatterns.Creational.Prototype;
 using DesignPatterns.Creational.Singleton;
 using Spectre.Console;
 
@@ -20,7 +21,8 @@ public sealed class CreationalConsoleView : IConsoleView
                     new FactoryMethodConsoleView(),
                     new AbstractFactoryConsoleView(),
                     new SingletonConsoleView(),
-                    new BuilderConsoleView())
+                    new BuilderConsoleView(),
+                    new PrototypeConsoleView())
                 .UseConverter(view => view.Label));
         view.Render();
     }
